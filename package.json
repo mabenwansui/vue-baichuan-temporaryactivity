@@ -1,11 +1,25 @@
 {
   "name": "event_test",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "publish": "node ./publish.js",
     "lint": "vue-cli-service lint"
+  },
+  "yangtuo": {
+    "eventId": "a684bc6171eecfd2",
+    "extField": {
+      "projectName": "vue-test",
+      "domain": "wow.liepin.com",
+      "event_type": [
+        "4",
+        "3"
+      ],
+      "event_online": "1",
+      "event_biz": "5",
+      "mscid": "FaI_SOwh"
+    }
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -17,8 +31,15 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0-0",
     "babel-eslint": "^10.1.0",
+    "chalk": "^4.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0"
+    "eslint-plugin-vue": "^7.0.0-0",
+    "html-webpack-plugin": "^4.5.0",
+    "i": "^0.3.6",
+    "npm": "^6.14.8",
+    "os": "^0.1.1",
+    "request": "^2.88.2",
+    "zip-dir": "^1.0.2"
   },
   "eslintConfig": {
     "root": true,
