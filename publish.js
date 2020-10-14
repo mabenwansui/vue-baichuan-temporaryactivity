@@ -92,7 +92,7 @@ function send(data) {
     try {
       request(
         {
-          url: 'http://rivers.lietou.com/project/uploadzip.json',
+          url: 'http://rivers.tongdao.cn/project/uploadzip.json',
           headers: { 'X-Requested-With': 'XMLHttpRequest' },
           method: 'post',
           formData,
