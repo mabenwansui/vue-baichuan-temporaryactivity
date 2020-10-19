@@ -1,24 +1,54 @@
-# event_test
+# vue 百川临时活动
 
-## Project setup
+
+## 项目配置
+
+### 第1步 通过百川临时活动新建项目
+
+拷贝 项目ID以及媒体码
+
+### 第2步 修改package.json
+```
+ "yangtuo": {
+    "eventId": "n584bc6171eecfd3",   // 项目ID
+    "extField": {
+      "projectName": "vue-test",
+      "domain": "wow.liepin.com",
+      "event_type": [   // 活动类型（可多选）  促销(1)  促活跃(2)  拉新(3)   其他(4)
+        "4"
+      ],
+      "event_online": "1",   // 线上/线下  (1/2)
+      "event_biz": "5",      // 活动对象    B(1)   C(2)   H(3)   校聘(4)    其它(5)
+      "mscid": "FaI_SOwh"    // 媒体码
+    }
+  },
+```
+yangtuo字段都应该填写，对应百川活动创建表单
+
+
+## 项目安装
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 开发
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 生成生产文件
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 发布到百川临时活动
 ```
-npm run lint
+npm run publish
 ```
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
