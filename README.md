@@ -45,6 +45,7 @@ npm run build
 ```
 
 ### 发布到百川临时活动
+先`build`再执行`publish`
 ```
 npm run publish
 ```
