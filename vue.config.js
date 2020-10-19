@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const HtmlCustomPlugin = require('./htmlCustomPlugin')
-const HtmlWebpackPlugin = require('@vue/cli-service/node_modules/html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const getHtmls = src => fs.readdirSync(src).filter(v=> /\.html?$/.test(v)).filter(v=> v!=='index.html')
 
